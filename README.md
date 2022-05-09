@@ -62,6 +62,21 @@ cd r_drop_glue
 bash run.sh |& tee rdrop_sst2.log
 ```
 
+## Simple Usage
+In python shell
+
+```
+from transformers import pipeline
+
+classifier = pipeline("sentiment-analysis", model="r_drop_glue/sst2_results")
+# Or Running this
+# classifier = pipeline("sentiment-analysis", model="ori_glue/sst2_results")
+
+# Make prediction of the following sentences
+classifier("how bad this movie was")
+classifier("what a great idea")
+```
+
 ## R-Drop changes
 Change happened in [modeling_bert.py](r_drop_glue/transformers_rdrop/models/bert/modeling_bert.py)
 
