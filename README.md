@@ -38,7 +38,7 @@ conda create -n glue python=3.8.1
 conda activate glue
 ```
 
-Install pyTorch
+Install PyTorch
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch-lts
 ```
@@ -55,8 +55,8 @@ cd ori_glue
 bash run.sh |& tee ori_sst2.log
 ```
 
-## Run regularized dropout normailzed sst2 benchmarks
-Obtain regularized dropout normailzed sst2 benchmarks using huggingface trainer
+## Run regularized dropout sst2 benchmarks
+Obtain regularized dropout sst2 benchmarks using huggingface trainer
 ```
 cd r_drop_glue
 bash run.sh |& tee rdrop_sst2.log
