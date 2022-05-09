@@ -9,6 +9,7 @@
 *.so
 
 #Data checkpoints and results       
+**sst2_results
 data/*/*/   
 data/*/*.zip
 checkpoints/
