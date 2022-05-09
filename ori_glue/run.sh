@@ -1,0 +1,18 @@
+CUDA_VISIBLE_DEVICES=0 python run_glue.py \
+    --model_name_or_path=bert-base-uncased \
+    --do_train \
+    --do_eval \
+    --fp16 \
+    --save_strategy=epoch \
+    --task_name=sst2 \
+    --learning_rate=1e-5 \
+    --per_device_train_batch_size=32 \
+    --num_train_epochs=10 \
+    --warmup_ratio=0.06 \
+    --adam_beta2=0.98 \
+    --adam_epsilon=1e-6 \
+    --evaluation_strategy=epoch \
+    --weight_decay=0.01 \
+    --lr_scheduler_type=polynomial \
+    --seed=5 \
+    --output_dir ./sst2_results

@@ -1,0 +1,7 @@
+# python=3.8.1
+# conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch-lts
+transformers==4.6.0
+datasets
+tokenizers==0.10.1
+scipy
+sklearn
